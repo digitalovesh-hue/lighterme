@@ -1,0 +1,15 @@
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Lighter<span>Me</span></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/" class="<%= page === 'home' ? 'active' : '' %>">Home</a></li>
+      <li><a href="/compare" class="<%= page === 'compare' ? 'active' : '' %>">Compare Clinics</a></li>
+      <li><a href="/blog" class="<%= page === 'blog' ? 'active' : '' %>">Blog</a></li>
+      <li><a href="/about" class="<%= page === 'about' ? 'active' : '' %>">About</a></li>
+      <li><a href="/compare" class="nav-cta">Find Your Programme</a></li>
+    </ul>
+  </div>
+</nav>
